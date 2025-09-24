@@ -1,121 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>void frequencies | the dead circuit</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        background: #000;
-        color: #ccc;
-        font-family: "Courier New", monospace;
-        line-height: 1.4;
-        padding: 2rem;
-        cursor: default;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-      .title {
-        font-size: 1.8rem;
-        margin-bottom: 2rem;
-        color: #888;
-        text-align: center;
-      }
-      .nav {
-        text-align: center;
-        margin-bottom: 3rem;
-      }
-      a {
-        color: #666;
-        text-decoration: none;
-      }
-      a:hover {
-        color: #999;
-        text-decoration: underline;
-      }
-      .ascii-art {
-        text-align: center;
-        margin: 3rem 0;
-        color: #777;
-        line-height: 1.2;
-        font-size: 0.7rem;
-      }
-      .philosophy-section {
-        margin: 3rem 0;
-      }
-      .philosophy-title {
-        color: #999;
-        margin-bottom: 1rem;
-        border-bottom: 1px solid #333;
-        padding-bottom: 0.5rem;
-      }
-      .philosophy-content {
-        margin-left: 2rem;
-        line-height: 1.6;
-        color: #888;
-      }
-      .blunt {
-        color: #ffffff;
-        font-weight: bold;
-      }
-      .sophisticated {
-        color: #008028;
-        font-style: italic;
-      }
-      .divider {
-        margin: 2rem 0;
-        color: #333;
-        text-align: center;
-      }
-
-      .solution-section {
-            margin: 3rem 0;
-            padding: 2rem;
-            border: 1px solid #333333;
-            text-align: center;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: #000; 
+            color: #ccc; 
+            font-family: 'Courier New', monospace; 
+            line-height: 1.4; 
+            padding: 2rem; 
+            cursor: default;
         }
-        
-      .solution-title {
-        color: #ffffff;
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-        text-transform: uppercase;
-      }
-
-      .solution-content {
-        color: #999999;
-        line-height: 1.6;
-        margin-bottom: 1.5rem;
-      }
-
-      .solution-list {
-        text-align: left;
-        margin-left: 2rem;
-        color: #888888;
-      }
-
-      .solution-list li {
-        margin: 0.8rem 0;
-      }
+        .container { max-width: 800px; margin: 0 auto; }
+        .title { font-size: 1.8rem; margin-bottom: 2rem; color: #888; text-align: center; }
+        .nav { text-align: center; margin-bottom: 3rem; }
+        a { color: #666; text-decoration: none; }
+        a:hover { color: #999; text-decoration: underline; }
+        .ascii-art { 
+            text-align: center; 
+            margin: 3rem 0; 
+            color: #777;
+            line-height: 1.2;
+            font-size: 0.7rem;
+        }
+        .philosophy-section { margin: 3rem 0; }
+        .philosophy-title { 
+            color: #999; 
+            margin-bottom: 1rem; 
+            border-bottom: 1px solid #333; 
+            padding-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        .philosophy-content { 
+            margin-left: 1rem; 
+            line-height: 1.6;
+            color: #888;
+        }
+        .blunt { color: #ffffff; font-weight: bold; }
+        .sophisticated { color: #008028; font-style: italic; }
+        .divider { margin: 2rem 0; color: #333; text-align: center; }
+        .quote {
+            border-left: 3px solid #444;
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            color: #777;
+            font-style: italic;
+        }
+        .principle-number {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .expanded-content {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: rgba(50, 50, 50, 0.1);
+            border: 1px solid #333;
+        }
+        .sub-point {
+            margin: 1rem 0;
+            padding-left: 1rem;
+            border-left: 1px solid #444;
+        }
+        .terminal-box {
+            border: 1px solid #333;
+            padding: 1rem;
+            margin: 1rem 0;
+            background: #111;
+            font-family: 'Courier New', monospace;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <div class="nav">
-        <a href="index.html">← dead circuit</a>
-      </div>
-
-      <div class="title">void frequencies</div>
-
-      <div class="ascii-art">
-        <pre>
+        <div class="nav">
+            <a href="index.html">← dead circuit</a> | 
+            <a href="avoid.html">avoid</a> | 
+            <a href="digital-remains.html">digital remains</a> | 
+            <a href="static-archive.html">static archive</a>
+        </div>
+        
+        <div class="title">void frequencies - expanded transmission</div>
+        
+        <div class="ascii-art">
+<pre>
    ▄████▄     ▄▄▄       █    ██   ██████ 
   ███▀▀██▄   ▒████▄     ██  ▓██▒▒██    ▒ 
  ███   ███   ▒██  ▀█▄  ▓██  ▒██░░ ▓██▄   
@@ -127,7 +98,7 @@
    ▀█████▀         ░  ░   ░           ░  
                                          
      VOID FREQUENCIES TRANSMISSION
-         [EXPANDED EDITION]
+           [EXPANDED EDITION]
 </pre>
         </div>
 
@@ -311,14 +282,14 @@
   ▐█▄▪▐█▐█ ▪▐▌██ ██▌▐█▌▐█▄▄▌    
   ·▀▀▀▀  ▀  ▀ ▀▀  █▪▀▀▀ ▀▀▀     
                                                   
-    TRANSMISSION ENDS
-</pre
-        >
-      </div>
+    EXPANDED TRANSMISSION ENDS
+</pre>
+        </div>
 
-      <div class="nav">
-        <a href="index.html">← return to silence</a>
-      </div>
+        <div class="nav">
+            <a href="index.html">← return to silence</a> | 
+            <a href="avoid.html">→ learn to resist</a>
+        </div>
     </div>
-  </body>
+</body>
 </html>
