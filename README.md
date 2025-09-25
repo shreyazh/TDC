@@ -21,13 +21,13 @@ The circuit is dead, but we are not. This project examines how:
 
 ## 🗂️ Project Structure
 
-dead-circuit/
-├── index.html # Main landing page
-├── void.html # Philosophical manifestos (expanded)
-├── remains.html # Archive of digital artifacts
-├── static.html # Digital archaeology collections
-├── join.html # Ironic "resistance" movement
-├── avoid.html # Practical guide to digital reclamation
-└── README.md # This file
+dead-circuit/  
+├── index.html # Main landing page  
+├── void.html # Philosophical manifestos (expanded)  
+├── remains.html # Archive of digital artifacts  
+├── static.html # Digital archaeology collections  
+├── join.html # Ironic "resistance" movement  
+├── avoid.html # Practical guide to digital reclamation  
+└── README.md # This file  
 
 
