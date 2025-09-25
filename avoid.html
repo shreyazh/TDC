@@ -1,463 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>avoid | reclaim your mind</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        background: #000;
-        color: #ccc;
-        font-family: "Courier New", monospace;
-        line-height: 1.6;
-        min-height: 100vh;
-        padding: 2rem;
-        cursor: default;
-        max-width: 900px;
-        margin: 0 auto;
-      }
-      .container {
-        width: 100%;
-      }
-      .title {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        color: #999999;
-        text-align: center;
-        letter-spacing: 3px;
-      }
-      .subtitle {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-        color: #565656;
-        text-align: center;
-      }
-      .nav {
-        text-align: center;
-        margin-bottom: 2rem;
-        padding-bottom: 1rem;
-      }
-      a {
-        color: #828282;
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-      a:hover {
-        color: #fff;
-        text-decoration: underline;
-      }
-      .step-container {
-        margin: 3rem 0;
-      }
-      .step {
-        margin-bottom: 3rem;
-        padding: 1rem;
-        border-left: 3px solid #ffffff;
-        background: rgba(55, 60, 55, 0.523);
-      }
-      .step-number {
-        font-size: 1rem;
-        color: #ffffff;
-        margin-bottom: 0.5rem;
-        font-weight: bold;
-      }
-      .step-title {
-        font-size: 1rem;
-        color: #fff;
-        margin-bottom: 1rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-      .step-content {
-        color: #ccc;
-        line-height: 1.7;
-      }
-      .step-content ul {
-        margin: 1rem 0;
-        padding-left: 1rem;
-      }
-      .step-content li {
-        margin-bottom: 0.5rem;
-      }
-      .manifesto {
-        background: rgba(0, 50, 0, 0.2);
-        padding: 2rem;
-        margin: 3rem 0;
-        border: 1px solid #333;
-      }
-      .manifesto-title {
-        color: #ffffff;
-        font-size: 1rem;
-        margin-bottom: 1rem;
-        text-align: center;
-        text-transform: uppercase;
-      }
-      .divider {
-        margin: 2rem 0;
-        color: #333;
-        text-align: center;
-        font-size: 1rem;
-        letter-spacing: 5px;
-      }
-      .action-call {
-        text-align: center;
-        margin: 3rem 0;
-        padding: 2rem;
-        background: rgba(92, 101, 92, 0.1);
-        border: 1px dashed #ffffff;
-      }
-      .action-title {
-        color: #ffffff;
-        font-size: 1rem;
-        margin-bottom: 1rem;
-        text-transform: uppercase;
-      }
-      .resources {
-        margin: 3rem 0;
-      }
-      .resources-title {
-        color: #ffffff;
-        font-size: 1rem;
-        margin-bottom: 1rem;
-        border-bottom: 1px solid #333;
-        padding-bottom: 0.5rem;
-      }
-      .resource-list {
-        list-style-type: none;
-      }
-      .resource-item {
-        margin: 1rem 0;
-        padding: 1rem;
-        background: rgba(151, 158, 151, 0.05);
-        border-left: 2px solid #ffffff;
-      }
-      .quote {
-        font-style: italic;
-        margin: 2rem 0;
-        padding: 1rem;
-        border-left: 3px solid #6f6f6f;
-        background: rgba(58, 59, 58, 0.185);
-        color: #aaa;
-      }
-      .blink {
-        animation: blink 2s infinite;
-      }
-      @keyframes blink {
-        0%,
-        50% {
-          opacity: 1;
-        }
-        51%,
-        100% {
-          opacity: 0;
-        }
-      }
-      .footer {
-        text-align: center;
-        margin-top: 3rem;
-        padding-top: 2rem;
-        border-top: 1px solid #333;
-        color: #666;
-        font-size: 0.9rem;
-      }
-      .warning {
-        color: #ffffff;
-        font-weight: bold;
-      }
-      .emphasis {
-        color: #ffffff;
-        font-weight: bold;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="nav">
-        <a href="index.html">← dead circuit</a>
-      </div>
 
-      <div class="title">avoid</div>
-      <div class="subtitle">
-        The circuit is dead, but we are not. Reclaim your mind.
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>avoid | reclaim your mind</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      <div class="quote">
-        "The attention economy is the new opium of the masses. It promises
-        connection but delivers isolation, offers information but creates
-        ignorance, provides entertainment but fosters emptiness."
-        <br /><br />— The Resistance Manifesto
-      </div>
+    body {
+      background: #000;
+      color: #ccc;
+      font-family: "Courier New", monospace;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 2rem;
+      cursor: default;
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
-      <div class="step-container">
-        <div class="step">
-          <div class="step-number">STEP 01</div>
-          <div class="step-title">ACKNOWLEDGE THE HOLLOWING</div>
-          <div class="step-content">
-            <p>
-              Recognize how your attention has been commodified. Notice the
-              patterns of endless scrolling, the dopamine hits from
-              notifications, the manufactured desires. The first step to
-              recovery is admitting you've been hijacked.
-            </p>
+    .container {
+      width: 100%;
+    }
 
-            <p><span class="warning">Warning signs:</span></p>
-            <ul>
-              <li>
-                Reaching for your phone automatically, without conscious thought
-              </li>
-              <li>Feeling anxiety when separated from your devices</li>
-              <li>Scrolling through feeds even when bored with the content</li>
-              <li>Comparing your life to curated digital personas</li>
-              <li>
-                Difficulty concentrating on single tasks for extended periods
-              </li>
-            </ul>
+    .title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #999999;
+      text-align: center;
+      letter-spacing: 3px;
+    }
 
-            <p>
-              <span class="emphasis">Action:</span> For one week, keep a log of
-              your screen time and attention patterns. Note when you feel
-              compelled to check devices versus when you choose to.
-            </p>
-          </div>
-        </div>
+    .subtitle {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      color: #565656;
+      text-align: center;
+    }
 
-        <div class="step">
-          <div class="step-number">STEP 02</div>
-          <div class="step-title">DIGITAL DETOXIFICATION</div>
-          <div class="step-content">
-            <p>
-              Delete the most addictive apps from your phone. Set strict
-              boundaries for screen time. Reclaim hours of your day from the
-              algorithmic feed. Start with one day a week completely
-              disconnected.
-            </p>
+    .nav {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+    }
 
-            <p><span class="emphasis">Detoxification strategies:</span></p>
-            <ul>
-              <li>
-                Remove social media apps from your phone (keep them accessible
-                only on desktop)
-              </li>
-              <li>Turn off non-essential notifications</li>
-              <li>Establish phone-free zones (bedroom, dining table)</li>
-              <li>Use website blockers during work hours</li>
-              <li>Implement a digital curfew 1-2 hours before bed</li>
-            </ul>
+    a {
+      color: #828282;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
 
-            <p>
-              <span class="emphasis">The 30-day reset:</span> Completely
-              eliminate the most problematic platforms for 30 days to break the
-              addiction cycle and reset your neural pathways.
-            </p>
-          </div>
-        </div>
+    a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
 
-        <div class="step">
-          <div class="step-number">STEP 03</div>
-          <div class="step-title">RECLAIM YOUR ATTENTION</div>
-          <div class="step-content">
-            <p>
-              Your attention is your most valuable resource. Stop giving it away
-              for free. Practice focused work without distractions. Read books
-              instead of summaries. Have conversations without phones present.
-            </p>
+    .step-container {
+      margin: 3rem 0;
+    }
 
-            <p><span class="emphasis">Attention-building practices:</span></p>
-            <ul>
-              <li>
-                Practice deep work sessions (90 minutes of focused attention)
-              </li>
-              <li>Read physical books for at least 30 minutes daily</li>
-              <li>
-                Engage in activities that require sustained focus (learning
-                instruments, crafts)
-              </li>
-              <li>Meditate to strengthen your attention muscle</li>
-              <li>Have device-free meals and conversations</li>
-            </ul>
+    .step {
+      margin-bottom: 3rem;
+      padding: 1rem;
+      border-left: 3px solid #ffffff;
+      background: rgba(55, 60, 55, 0.523);
+    }
 
-            <p>
-              <span class="warning"
-                >The attention economy profits from your distraction.</span
-              >
-              Every minute you reclaim is a minute stolen back from the
-              machines.
-            </p>
-          </div>
-        </div>
+    .step-number {
+      font-size: 1rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
 
-        <div class="step">
-          <div class="step-number">STEP 04</div>
-          <div class="step-title">REBUILD AUTHENTIC CONNECTION</div>
-          <div class="step-content">
-            <p>
-              Replace digital interaction with face-to-face conversation. Join
-              communities based on shared interests rather than algorithmic
-              suggestions. Create rather than consume.
-            </p>
+    .step-title {
+      font-size: 1rem;
+      color: #fff;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
 
-            <p><span class="emphasis">Connection restoration:</span></p>
-            <ul>
-              <li>
-                Schedule regular in-person meetings with friends and family
-              </li>
-              <li>Join local clubs or groups based on genuine interests</li>
-              <li>Volunteer for causes that matter to you</li>
-              <li>Practice active listening in conversations</li>
-              <li>
-                Create art, writing, or projects that express your authentic
-                self
-              </li>
-            </ul>
+    .step-content {
+      color: #ccc;
+      line-height: 1.7;
+    }
 
-            <p>
-              <span class="emphasis">Digital connection alternatives:</span> Use
-              technology to facilitate real-world connections rather than
-              replace them. Schedule meetups, share creative projects, organize
-              community events.
-            </p>
-          </div>
-        </div>
+    .step-content ul {
+      margin: 1rem 0;
+      padding-left: 1rem;
+    }
 
-        <div class="step">
-          <div class="step-number">STEP 05</div>
-          <div class="step-title">BECOME UNAIMMABLE</div>
-          <div class="step-content">
-            <p>
-              Develop interests and behaviors that can't be easily categorized
-              or monetized. Embrace complexity that resists algorithmic
-              simplification. Be unpredictable to the machines.
-            </p>
+    .step-content li {
+      margin-bottom: 0.5rem;
+    }
 
-            <p>
-              <span class="emphasis">Strategies for algorithmic evasion:</span>
-            </p>
-            <ul>
-              <li>Diversify your interests across unrelated domains</li>
-              <li>Use privacy-focused tools and browsers</li>
-              <li>Regularly clear cookies and use private browsing</li>
-              <li>Support and use decentralized platforms</li>
-              <li>Create content that doesn't fit neatly into categories</li>
-            </ul>
+    .manifesto {
+      background: rgba(0, 50, 0, 0.2);
+      padding: 2rem;
+      margin: 3rem 0;
+      border: 1px solid #333;
+    }
 
-            <p>
-              <span class="warning">The goal is not to disappear entirely</span>
-              but to become a complex, multifaceted individual that resists
-              algorithmic profiling and manipulation.
-            </p>
-          </div>
-        </div>
-      </div>
+    .manifesto-title {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
 
-      <div class="divider"></div>
+    .divider {
+      margin: 2rem 0;
+      color: #333;
+      text-align: center;
+      font-size: 1rem;
+      letter-spacing: 5px;
+    }
 
-      <div class="manifesto">
-        <div class="manifesto-title">THE RESISTANCE BEGINS WITH YOU</div>
-        <p>
-          This is not about rejecting technology entirely. It's about using
-          technology as a tool rather than being used as one. It's about
-          maintaining human agency in a world designed to strip it away.
-        </p>
+    .action-call {
+      text-align: center;
+      margin: 3rem 0;
+      padding: 2rem;
+      background: rgba(92, 101, 92, 0.1);
+      border: 1px dashed #ffffff;
+    }
 
-        <p>
-          Join others who have chosen to opt out of the attention economy. Share
-          strategies. Support each other. Build pockets of sanity in the digital
-          madness.
-        </p>
+    .action-title {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
 
-        <p><span class="emphasis">Our principles:</span></p>
-        <ul>
-          <li>Technology should serve human needs, not corporate profits</li>
-          <li>Attention is a finite resource worthy of protection</li>
-          <li>Authentic connection cannot be algorithmically mediated</li>
-          <li>Complexity and nuance are essential human qualities</li>
-          <li>Resistance is possible, one mindful choice at a time</li>
-        </ul>
-      </div>
+    .resources {
+      margin: 3rem 0;
+    }
 
-      <div class="action-call">
-        <div class="action-title">Ready to reclaim your mind?</div>
-        <p>
-          The path begins with a single conscious choice. Start today with one
-          small change.
-        </p>
-        <p>
-          Join the resistance at
-          <a href="https://discord.gg/RZbW26vMVj">the movement page</a>.
-        </p>
-      </div>
+    .resources-title {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
 
-      <div class="resources">
-        <div class="resources-title">RESISTANCE RESOURCES</div>
-        <ul class="resource-list">
-          <li class="resource-item">
-            <strong>Digital Minimalism</strong> - A philosophy of technology use
-            centered on intentionally using technology to support your values
-            rather than letting it use you.
-          </li>
-          <li class="resource-item">
-            <strong>The Center for Humane Technology</strong> - An organization
-            dedicated to realigning technology with humanity's best interests.
-          </li>
-          <li class="resource-item">
-            <strong>Time Well Spent</strong> - A movement to transform the
-            attention economy and create technology that protects our minds and
-            replenishes society.
-          </li>
-          <li class="resource-item">
-            <strong>Detox Communities</strong> - Online and offline groups
-            supporting digital detoxification and mindful technology use.
-          </li>
-        </ul>
-      </div>
+    .resource-list {
+      list-style-type: none;
+    }
 
-      <div class="footer">
-        <p>
-          The resistance continues. One mind at a time.
-          <span class="blink">_</span>
-        </p>
-        <p><a href="https://discord.gg/RZbW26vMVj">discord</a></p>
-      </div>
-    </div>
+    .resource-item {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: rgba(151, 158, 151, 0.05);
+      border-left: 2px solid #ffffff;
+    }
 
+    .quote {
+      font-style: italic;
+      margin: 2rem 0;
+      padding: 1rem;
+      border-left: 3px solid #6f6f6f;
+      background: rgba(58, 59, 58, 0.185);
+      color: #aaa;
+    }
+
+    .blink {
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+
+      0%,
+      50% {
+        opacity: 1;
+      }
+
+      51%,
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #333;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .warning {
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .emphasis {
+      color: #ffffff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
     <div class="nav">
-      <a href="index.html">← return to silence</a>
+      <a href="index.html">← dead circuit</a>
     </div>
 
-    <script>
-      // Add subtle interactive elements
-      document.addEventListener("DOMContentLoaded", function () {
-        const steps = document.querySelectorAll(".step");
+    <div class="title">avoid</div>
+    <div class="subtitle">
+      The circuit is dead, but we are not. Reclaim your mind.
+    </div>
 
-        steps.forEach((step) => {
-          step.addEventListener("mouseenter", function () {
-            this.style.borderLeftColor = "#c8ffc8";
-            this.style.background = "rgba(138, 255, 138, 0.1)";
-          });
+    <div class="quote">
+      "The attention economy is the new opium of the masses. It promises
+      connection but delivers isolation, offers information but creates
+      ignorance, provides entertainment but fosters emptiness."
+      <br /><br />— The Resistance Manifesto
+    </div>
 
-          step.addEventListener("mouseleave", function () {
-            this.style.borderLeftColor = "#8aff8a";
-            this.style.background = "rgba(138, 255, 138, 0.05)";
-          });
+    <div class="step-container">
+      <div class="step">
+        <div class="step-number">STEP 01</div>
+        <div class="step-title">ACKNOWLEDGE THE HOLLOWING</div>
+        <div class="step-content">
+          <p>
+            Recognize how your attention has been commodified. Notice the
+            patterns of endless scrolling, the dopamine hits from
+            notifications, the manufactured desires. The first step to
+            recovery is admitting you've been hijacked.
+          </p>
+
+          <p><span class="warning">Warning signs:</span></p>
+          <ul>
+            <li>
+              Reaching for your phone automatically, without conscious thought
+            </li>
+            <li>Feeling anxiety when separated from your devices</li>
+            <li>Scrolling through feeds even when bored with the content</li>
+            <li>Comparing your life to curated digital personas</li>
+            <li>
+              Difficulty concentrating on single tasks for extended periods
+            </li>
+          </ul>
+
+          <p>
+            <span class="emphasis">Action:</span> For one week, keep a log of
+            your screen time and attention patterns. Note when you feel
+            compelled to check devices versus when you choose to.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">STEP 02</div>
+        <div class="step-title">DIGITAL DETOXIFICATION</div>
+        <div class="step-content">
+          <p>
+            Delete the most addictive apps from your phone. Set strict
+            boundaries for screen time. Reclaim hours of your day from the
+            algorithmic feed. Start with one day a week completely
+            disconnected.
+          </p>
+
+          <p><span class="emphasis">Detoxification strategies:</span></p>
+          <ul>
+            <li>
+              Remove social media apps from your phone [keep them accessible
+              only on desktop]
+            </li>
+            <li>Turn off non-essential notifications</li>
+            <li>Establish phone-free zones [bedroom, dining table]</li>
+            <li>Use website blockers during work hours</li>
+            <li>Implement a digital curfew 1-2 hours before bed</li>
+          </ul>
+
+          <p>
+            <span class="emphasis">The 30-day reset:</span> Completely
+            eliminate the most problematic platforms for 30 days to break the
+            addiction cycle and reset your neural pathways.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">STEP 03</div>
+        <div class="step-title">RECLAIM YOUR ATTENTION</div>
+        <div class="step-content">
+          <p>
+            Your attention is your most valuable resource. Stop giving it away
+            for free. Practice focused work without distractions. Read books
+            instead of summaries. Have conversations without phones present.
+          </p>
+
+          <p><span class="emphasis">Attention-building practices:</span></p>
+          <ul>
+            <li>
+              Practice deep work sessions [90 minutes of focused attention]
+            </li>
+            <li>Read physical books for at least 30 minutes daily</li>
+            <li>
+              Engage in activities that require sustained focus [learning
+              instruments, crafts]
+            </li>
+            <li>Meditate to strengthen your attention muscle</li>
+            <li>Have device-free meals and conversations</li>
+          </ul>
+
+          <p>
+            <span class="warning">The attention economy profits from your distraction.</span>
+            Every minute you reclaim is a minute stolen back from the
+            machines.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">STEP 04</div>
+        <div class="step-title">REBUILD AUTHENTIC CONNECTION</div>
+        <div class="step-content">
+          <p>
+            Replace digital interaction with face-to-face conversation. Join
+            communities based on shared interests rather than algorithmic
+            suggestions. Create rather than consume.
+          </p>
+
+          <p><span class="emphasis">Connection restoration:</span></p>
+          <ul>
+            <li>
+              Schedule regular in-person meetings with friends and family
+            </li>
+            <li>Join local clubs or groups based on genuine interests</li>
+            <li>Volunteer for causes that matter to you</li>
+            <li>Practice active listening in conversations</li>
+            <li>
+              Create art, writing, or projects that express your authentic
+              self
+            </li>
+          </ul>
+
+          <p>
+            <span class="emphasis">Digital connection alternatives:</span> Use
+            technology to facilitate real-world connections rather than
+            replace them. Schedule meetups, share creative projects, organize
+            community events.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">STEP 05</div>
+        <div class="step-title">BECOME UNAIMMABLE</div>
+        <div class="step-content">
+          <p>
+            Develop interests and behaviors that can't be easily categorized
+            or monetized. Embrace complexity that resists algorithmic
+            simplification. Be unpredictable to the machines.
+          </p>
+
+          <p>
+            <span class="emphasis">Strategies for algorithmic evasion:</span>
+          </p>
+          <ul>
+            <li>Diversify your interests across unrelated domains</li>
+            <li>Use privacy-focused tools and browsers</li>
+            <li>Regularly clear cookies and use private browsing</li>
+            <li>Support and use decentralized platforms</li>
+            <li>Create content that doesn't fit neatly into categories</li>
+          </ul>
+
+          <p>
+            <span class="warning">The goal is not to disappear entirely</span>
+            but to become a complex, multifaceted individual that resists
+            algorithmic profiling and manipulation.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="manifesto">
+      <div class="manifesto-title">THE RESISTANCE BEGINS WITH YOU</div>
+      <p>
+        This is not about rejecting technology entirely. It's about using
+        technology as a tool rather than being used as one. It's about
+        maintaining human agency in a world designed to strip it away.
+      </p>
+
+      <p>
+        Join others who have chosen to opt out of the attention economy. Share
+        strategies. Support each other. Build pockets of sanity in the digital
+        madness.
+      </p>
+
+      <p><span class="emphasis">Our principles:</span></p>
+      <ul>
+        <li>Technology should serve human needs, not corporate profits</li>
+        <li>Attention is a finite resource worthy of protection</li>
+        <li>Authentic connection cannot be algorithmically mediated</li>
+        <li>Complexity and nuance are essential human qualities</li>
+        <li>Resistance is possible, one mindful choice at a time</li>
+      </ul>
+    </div>
+
+    <div class="action-call">
+      <div class="action-title">Ready to reclaim your mind?</div>
+      <p>
+        The path begins with a single conscious choice. Start today with one
+        small change.
+      </p>
+      <p>
+        Join the resistance at
+        <a href="https://discord.gg/RZbW26vMVj">the movement page</a>.
+      </p>
+    </div>
+
+    <div class="resources">
+      <div class="resources-title">RESISTANCE RESOURCES</div>
+      <ul class="resource-list">
+        <li class="resource-item">
+          <strong>Digital Minimalism</strong> - A philosophy of technology use
+          centered on intentionally using technology to support your values
+          rather than letting it use you.
+        </li>
+        <li class="resource-item">
+          <strong>The Center for Humane Technology</strong> - An organization
+          dedicated to realigning technology with humanity's best interests.
+        </li>
+        <li class="resource-item">
+          <strong>Time Well Spent</strong> - A movement to transform the
+          attention economy and create technology that protects our minds and
+          replenishes society.
+        </li>
+        <li class="resource-item">
+          <strong>Detox Communities</strong> - Online and offline groups
+          supporting digital detoxification and mindful technology use.
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <p>
+        The resistance continues. One mind at a time.
+        <span class="blink">_</span>
+      </p>
+      <p><a href="https://discord.gg/RZbW26vMVj">[discord]</a></p>
+    </div>
+  </div>
+
+  <div class="nav">
+    <a href="index.html">← return to silence</a>
+  </div>
+
+  <script>
+    // Add subtle interactive elements
+    document.addEventListener("DOMContentLoaded", function () {
+      const steps = document.querySelectorAll(".step");
+
+      steps.forEach((step) => {
+        step.addEventListener("mouseenter", function () {
+          this.style.borderLeftColor = "#c8ffc8";
+          this.style.background = "rgba(138, 255, 138, 0.1)";
         });
 
-        // Add focus indicators for accessibility
-        const links = document.querySelectorAll("a");
-        links.forEach((link) => {
-          link.addEventListener("focus", function () {
-            this.style.outline = "2px solid #8aff8a";
-          });
-
-          link.addEventListener("blur", function () {
-            this.style.outline = "none";
-          });
+        step.addEventListener("mouseleave", function () {
+          this.style.borderLeftColor = "#8aff8a";
+          this.style.background = "rgba(138, 255, 138, 0.05)";
         });
       });
-    </script>
-  </body>
+
+      // Add focus indicators for accessibility
+      const links = document.querySelectorAll("a");
+      links.forEach((link) => {
+        link.addEventListener("focus", function () {
+          this.style.outline = "2px solid #8aff8a";
+        });
+
+        link.addEventListener("blur", function () {
+          this.style.outline = "none";
+        });
+      });
+    });
+  </script>
+</body>
+
 </html>
