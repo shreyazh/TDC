@@ -1,47 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>void frequencies | the dead circuit</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            background: #000; 
-            color: #ccc; 
-            font-family: 'Courier New', monospace; 
-            line-height: 1.4; 
-            padding: 2rem; 
-            cursor: default;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .container { max-width: 800px; margin: 0 auto; }
-        .title { font-size: 1.8rem; margin-bottom: 2rem; color: #888; text-align: center; }
-        .nav { text-align: center; margin-bottom: 3rem; }
-        a { color: #666; text-decoration: none; }
-        a:hover { color: #999; text-decoration: underline; }
-        .ascii-art { 
-            text-align: center; 
-            margin: 3rem 0; 
+
+        body {
+            background: #000;
+            color: #ccc;
+            font-family: 'Courier New', monospace;
+            line-height: 1.4;
+            padding: 1.2rem;
+            cursor: default;
+            margin-right: 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: #888;
+            text-align: center;
+        }
+
+        .nav {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #999;
+            text-decoration: underline;
+        }
+
+        .ascii-art {
+            text-align: center;
+            margin: 3rem 0;
+            padding-left: 1.4rem;
             color: #777;
             line-height: 1.2;
             font-size: 0.7rem;
         }
-        .philosophy-section { margin: 3rem 0; }
-        .philosophy-title { 
-            color: #999; 
-            margin-bottom: 1rem; 
-            border-bottom: 1px solid #333; 
+
+        .philosophy-section {
+            margin: 3rem 0;
+        }
+
+        .philosophy-title {
+            color: #999;
+            margin-bottom: 1rem;
+            margin-left: 0.5rem;
+            border-bottom: 1px solid #333;
             padding-bottom: 0.5rem;
             font-size: 1.3rem;
         }
-        .philosophy-content { 
-            margin-left: 1rem; 
+
+        .philosophy-content {
+            margin-left: 1rem;
             line-height: 1.6;
             color: #888;
         }
-        .blunt { color: #ffffff; font-weight: bold; }
-        .sophisticated { color: #008028; font-style: italic; }
-        .divider { margin: 2rem 0; color: #333; text-align: center; }
+
+        .blunt {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .sophisticated {
+            color: #598968;
+            font-style: italic;
+        }
+
+        .divider {
+            margin: 2rem 0;
+            color: #333;
+            text-align: center;
+        }
+
         .quote {
             border-left: 3px solid #444;
             padding-left: 1rem;
@@ -49,22 +100,27 @@
             color: #777;
             font-style: italic;
         }
+
         .principle-number {
             color: #666;
             font-size: 0.9rem;
+            margin-left: 0.5rem;
             margin-bottom: 0.5rem;
         }
+
         .expanded-content {
             margin-top: 1.5rem;
             padding: 1rem;
             background: rgba(50, 50, 50, 0.1);
             border: 1px solid #333;
         }
+
         .sub-point {
             margin: 1rem 0;
             padding-left: 1rem;
             border-left: 1px solid #444;
         }
+
         .terminal-box {
             border: 1px solid #333;
             padding: 1rem;
@@ -74,27 +130,28 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="nav">
             <a href="index.html">← dead circuit</a>
         </div>
-        
+
         <div class="title">void frequencies transmission</div>
-        
+
         <div class="ascii-art">
-<pre>
-   ▄████▄     ▄▄▄       █    ██   ██████ 
-  ███▀▀██▄   ▒████▄     ██  ▓██▒▒██    ▒ 
- ███   ███   ▒██  ▀█▄  ▓██  ▒██░░ ▓██▄   
-▄███▄▄▄██▀   ░██▄▄▄▄██ ▓▓█  ░██░  ▒   ██▒
-▀▀██▀▀▀██▄    ▓█   ▓██▒▒▒█████▓ ▒██████▒▒
-  ███   ███   ▒▒   ▓▒█░░▒▓▒ ▒ ▒ ▒ ▒▓▒ ▒ ░
-  ███   ███    ▒   ▒▒ ░░░▒░ ░ ░ ░ ░▒  ░ ░
-  ███   ███    ░   ▒    ░░░ ░ ░ ░  ░  ░  
-   ▀█████▀         ░  ░   ░           ░  
-                                         
-     VOID FREQUENCIES TRANSMISSION
+            <pre>
+ ██▒   █▓    ▒█████      ██▓   ▓█████▄ 
+▓██░   █▒   ▒██▒  ██▒   ▓██▒   ▒██▀ ██▌
+ ▓██  █▒░   ▒██░  ██▒   ▒██▒   ░██   █▌
+  ▒██ █░░   ▒██   ██░   ░██░   ░▓█▄   ▌
+   ▒▀█░     ░ ████▓▒░   ░██░   ░▒████▓ 
+   ░ ▐░     ░ ▒░▒░▒░    ░▓      ▒▒▓  ▒ 
+   ░ ░░       ░ ▒ ▒░     ▒ ░    ░ ▒  ▒ 
+     ░░     ░ ░ ░ ▒      ▒ ░    ░ ░  ░ 
+      ░         ░ ░      ░        ░    
+                                             
+VOID FREQUENCIES TRANSMISSION
 </pre>
         </div>
 
@@ -103,167 +160,172 @@
             <div class="philosophy-title">THE GREAT HOLLOWING</div>
             <div class="philosophy-content">
                 <p class="blunt">You're empty because you were designed to be empty.</p>
-                <p class="sophisticated">The contemporary human condition represents a systematic evacuation of interiority, 
-                where consciousness has been methodically replaced by algorithmic suggestion and dopamine-driven compliance.</p>
-                <p>The digital landscape didn't just distract you—it surgically removed your capacity for genuine meaning. 
-                Every notification, every like, every scroll was another spoonful of your soul scooped out and replaced with 
-                prefabricated desire. You're not a person anymore; you're a collection of consumer preferences wearing skin.</p>
-                
+                <p class="sophisticated">The contemporary human condition represents a systematic evacuation of
+                    interiority,
+                    where consciousness has been methodically replaced by algorithmic suggestion and dopamine-driven
+                    compliance.</p>
+                <p>The digital landscape didn't just distract you—it surgically removed your capacity for genuine
+                    meaning.
+                    Every notification, every like, every scroll was another spoonful of your soul scooped out and
+                    replaced with
+                    prefabricated desire. You're not a person anymore; you're a collection of consumer preferences
+                    wearing skin.</p>
+
                 <div class="expanded-content">
                     <p><strong>Expanded Analysis:</strong></p>
                     <div class="sub-point">
                         <strong>The Attention Extraction Economy</strong>
-                        <p>Your focus has been monetized without your consent. Every moment of boredom that you fill with 
-                        digital consumption is a victory for the attention merchants. The constant stimulation prevents 
-                        the formation of original thought.</p>
+                        <p>Your focus has been monetized without your consent. Every moment of boredom that you fill
+                            with
+                            digital consumption is a victory for the attention merchants. The constant stimulation
+                            prevents
+                            the formation of original thought.</p>
                     </div>
-                    
+
                     <div class="sub-point">
                         <strong>The Erosion of Memory</strong>
-                        <p>When everything is searchable, we stop remembering. When every experience is documented, 
-                        we stop experiencing. The externalization of memory leads to the atrophy of our internal 
-                        cognitive capacities.</p>
+                        <p>When everything is searchable, we stop remembering. When every experience is documented,
+                            we stop experiencing. The externalization of memory leads to the atrophy of our internal
+                            cognitive capacities.</p>
                     </div>
-                    
+
                     <div class="quote">
-                        "We've outsourced our memories to devices and our decisions to algorithms. 
+                        "We've outsourced our memories to devices and our decisions to algorithms.
                         What remains is a hollowed-out shell performing the pantomime of consciousness."
                     </div>
-                    
+
                     <div class="terminal-box">
-> HOLLOWING METRICS:<br>
-> - Attention span reduction: 75% since 2000<br>
-> - Memory formation decline: 40% in digital natives<br>
-> - Original thought frequency: 12% of pre-digital levels<br>
-> - Self-reported emptiness: 68% and rising
+                        > HOLLOWING METRICS:<br>
+                        > - Attention span reduction: 75% since 2000<br>
+                        > - Memory formation decline: 40% in digital natives<br>
+                        > - Original thought frequency: 12% of pre-digital levels<br>
+                        > - Self-reported emptiness: 68% and rising
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="divider">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
 
         <div class="philosophy-section">
             <div class="principle-number">PRINCIPLE 002</div>
             <div class="philosophy-title">THE PARASITIC SYMBIOSIS</div>
             <div class="philosophy-content">
                 <p class="blunt">Your mind is rented property owned by silicon valley psychopaths.</p>
-                <p class="sophisticated">What masquerades as technological progress is actually the most sophisticated 
-                colonization effort in human history—the quiet invasion of cognitive territory by corporate entities.</p>
-                <p>You willingly carry the parasite in your pocket, checking it hundreds of times daily like a holy relic. 
-                The device knows you better than you know yourself because it designed the you that exists now. 
-                This isn't symbiosis—it's hosting a tapeworm that whispers sweet nothings while eating you from the inside.</p>
-                
+                <p class="sophisticated">What masquerades as technological progress is actually the most sophisticated
+                    colonization effort in human history—the quiet invasion of cognitive territory by corporate
+                    entities.</p>
+                <p>You willingly carry the parasite in your pocket, checking it hundreds of times daily like a holy
+                    relic.
+                    The device knows you better than you know yourself because it designed the you that exists now.
+                    This isn't symbiosis—it's hosting a tapeworm that whispers sweet nothings while eating you from the
+                    inside.</p>
+
                 <div class="expanded-content">
                     <p><strong>Expanded Analysis:</strong></p>
                     <div class="sub-point">
                         <strong>The Illusion of Choice</strong>
-                        <p>Every "choice" you make online has been carefully constrained and guided. The algorithms 
-                        present you with options they've determined you're likely to select, creating the illusion 
-                        of agency while ensuring predictable outcomes.</p>
+                        <p>Every "choice" you make online has been carefully constrained and guided. The algorithms
+                            present you with options they've determined you're likely to select, creating the illusion
+                            of agency while ensuring predictable outcomes.</p>
                     </div>
-                    
+
                     <div class="sub-point">
                         <strong>Behavioral Modification at Scale</strong>
-                        <p>Through A/B testing and predictive analytics, platforms systematically reshape user behavior. 
-                        What begins as subtle interface changes evolves into comprehensive psychological manipulation 
-                        designed to maximize engagement at any cost.</p>
+                        <p>Through A/B testing and predictive analytics, platforms systematically reshape user behavior.
+                            What begins as subtle interface changes evolves into comprehensive psychological
+                            manipulation
+                            designed to maximize engagement at any cost.</p>
                     </div>
-                    
+
                     <div class="quote">
-                        "The most brilliant minds of our generation are working on getting people to click ads. 
+                        "The most brilliant minds of our generation are working on getting people to click ads.
                         This is the great tragedy of our time—the misdirection of human potential."
                     </div>
-                    
+
                     <div class="terminal-box">
-> PARASITIC METRICS:<br>
-> - Daily device interactions: 2,617 average<br>
-> - Unconscious phone checks: 96% of total<br>
-> - Platform loyalty duration: 3.2 years average<br>
-> - Data points collected per user: 5,000+ daily
+                        > PARASITIC METRICS:<br>
+                        > - Daily device interactions: 2,617 average<br>
+                        > - Unconscious phone checks: 96% of total<br>
+                        > - Platform loyalty duration: 3.2 years average<br>
+                        > - Data points collected per user: 5,000+ daily
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="divider">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
 
         <div class="philosophy-section">
             <div class="principle-number">PRINCIPLE 003</div>
             <div class="philosophy-title">THE MANUFACTURED SELF</div>
             <div class="philosophy-content">
                 <p class="blunt">You're a brand pretending to be a person.</p>
-                <p class="sophisticated">Identity has become a curated performance for invisible audiences, 
-                a desperate pantomime of authenticity calculated for maximum engagement metrics.</p>
-                <p>Your opinions are prefabricated, your emotions are trend-responsive, your personality is 
-                market-tested. The self has been disassembled and reassembled as content. You don't have 
-                experiences anymore—you have content opportunities. You're not living; you're generating 
-                data points for machines that will outlive your hollowed-out corpse.</p>
-                
+                <p class="sophisticated">Identity has become a curated performance for invisible audiences,
+                    a desperate pantomime of authenticity calculated for maximum engagement metrics.</p>
+                <p>Your opinions are prefabricated, your emotions are trend-responsive, your personality is
+                    market-tested. The self has been disassembled and reassembled as content. You don't have
+                    experiences anymore—you have content opportunities. You're not living; you're generating
+                    data points for machines that will outlive your hollowed-out corpse.</p>
+
                 <div class="expanded-content">
                     <p><strong>Expanded Analysis:</strong></p>
                     <div class="sub-point">
                         <strong>The Performance of Authenticity</strong>
-                        <p>Social media has created a paradoxical demand: perform authenticity while conforming 
-                        to platform expectations. The result is a standardized version of "unique" personalities 
-                        that differ only in superficial details.</p>
+                        <p>Social media has created a paradoxical demand: perform authenticity while conforming
+                            to platform expectations. The result is a standardized version of "unique" personalities
+                            that differ only in superficial details.</p>
                     </div>
-                    
+
                     <div class="sub-point">
                         <strong>Identity as Content Strategy</strong>
-                        <p>Personal branding has replaced personality development. Individuals now approach 
-                        their own identities as marketable commodities, optimizing their traits and opinions 
-                        for maximum social capital.</p>
+                        <p>Personal branding has replaced personality development. Individuals now approach
+                            their own identities as marketable commodities, optimizing their traits and opinions
+                            for maximum social capital.</p>
                     </div>
-                    
+
                     <div class="quote">
-                        "We used to have personalities. Now we have brand guidelines. We used to have conversations. 
+                        "We used to have personalities. Now we have brand guidelines. We used to have conversations.
                         Now we have content strategies. We used to have friends. Now we have engagement metrics."
                     </div>
-                    
+
                     <div class="terminal-box">
-> IDENTITY CORRUPTION METRICS:<br>
-> - Online vs offline personality divergence: 73%<br>
-> - Content-driven life decisions: 41% of major choices<br>
-> - Authenticity performance anxiety: 84% of users<br>
-> - Personal brand maintenance time: 6.3 hours weekly
+                        > IDENTITY CORRUPTION METRICS:<br>
+                        > - Online vs offline personality divergence: 73%<br>
+                        > - Content-driven life decisions: 41% of major choices<br>
+                        > - Authenticity performance anxiety: 84% of users<br>
+                        > - Personal brand maintenance time: 6.3 hours weekly
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="divider">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
 
         <div class="philosophy-section">
             <div class="principle-number">PRINCIPLE 004</div>
             <div class="philosophy-title">THE SIMULATION OF MEANING</div>
             <div class="philosophy-content">
                 <p class="blunt">Your purpose is a carefully crafted illusion.</p>
-                <p class="sophisticated">Digital platforms provide the sensation of meaning without the substance, 
-                offering engagement metrics as substitutes for genuine accomplishment and virtual validation 
-                as replacements for authentic self-worth.</p>
-                <p>Likes become approval. Shares become impact. Followers become influence. But these are 
-                hollow currencies in an economy designed to keep you chasing emptiness. The simulation 
-                is so convincing that we've forgotten what real meaning feels like.</p>
-                
+                <p class="sophisticated">Digital platforms provide the sensation of meaning without the substance,
+                    offering engagement metrics as substitutes for genuine accomplishment and virtual validation
+                    as replacements for authentic self-worth.</p>
+                <p>Likes become approval. Shares become impact. Followers become influence. But these are
+                    hollow currencies in an economy designed to keep you chasing emptiness. The simulation
+                    is so convincing that we've forgotten what real meaning feels like.</p>
+
                 <div class="expanded-content">
                     <p><strong>Expanded Analysis:</strong></p>
                     <div class="sub-point">
                         <strong>The Gamification of Existence</strong>
-                        <p>Life has been transformed into a series of measurable achievements: followers gained, 
-                        posts viral, engagements maximized. This gamification creates the illusion of progress 
-                        while obscuring the absence of genuine development.</p>
+                        <p>Life has been transformed into a series of measurable achievements: followers gained,
+                            posts viral, engagements maximized. This gamification creates the illusion of progress
+                            while obscuring the absence of genuine development.</p>
                     </div>
-                    
+
                     <div class="sub-point">
                         <strong>The Quantified Self Delusion</strong>
-                        <p>We track our steps, our sleep, our productivity—reducing the rich complexity of human 
-                        experience to sterile data points. This quantification creates a false sense of control 
-                        and understanding while distancing us from actual lived experience.</p>
+                        <p>We track our steps, our sleep, our productivity—reducing the rich complexity of human
+                            experience to sterile data points. This quantification creates a false sense of control
+                            and understanding while distancing us from actual lived experience.</p>
                     </div>
-                    
+
                     <div class="quote">
-                        "We're optimizing ourselves for metrics that don't matter to please algorithms that don't care 
+                        "We're optimizing ourselves for metrics that don't matter to please algorithms that don't care
                         for audiences that don't exist. This is the grand absurdity of the digital age."
                     </div>
                 </div>
@@ -271,20 +333,21 @@
         </div>
 
         <div class="ascii-art">
-<pre>
-   ▄▄ •  ▄▄▄· • ▌ ▄ ·. ▄▄▄ .    
-  ▐█ ▀ ▪▐█ ▀█ ·██ ▐███▪▀▄.▀·    
-  ▄█ ▀█▄▄█▀▀█ ▐█ ▌▐▌▐█·▐▀▀▪▄    
-  ▐█▄▪▐█▐█ ▪▐▌██ ██▌▐█▌▐█▄▄▌    
-  ·▀▀▀▀  ▀  ▀ ▀▀  █▪▀▀▀ ▀▀▀      
-                                                  
-    TRANSMISSION ENDS
+            <pre>
+▄▄ •            ▄ .▄      • ▌ ▄ ·. ▄▄▄ .
+▐█ ▀ ▪▪         ██▪▐█▪     ·██ ▐███▪▀▄.▀·
+▄█ ▀█▄ ▄█▀▄     ██▀▐█ ▄█▀▄ ▐█ ▌▐▌▐█·▐▀▀▪▄
+▐█▄▪▐█▐█▌.▐▌    ██▌▐▀▐█▌.▐▌██ ██▌▐█▌▐█▄▄▌
+·▀▀▀▀  ▀█▄▀▪    ▀▀▀ · ▀█▄▀▪▀▀  █▪▀▀▀ ▀▀▀ 
+                                      
+TRANSMISSION ENDS
 </pre>
         </div>
         <div class="nav">
-            <a href="index.html">← return to silence</a> | 
+            <a href="index.html">← return to silence</a> |
             <a href="avoid.html">→ learn to resist</a>
         </div>
     </div>
 </body>
+
 </html>
