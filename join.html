@@ -1,121 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>join the movement | the dead circuit</title>
     <style>
-        * { 
-            margin: 0; 
-            padding: 0; 
-            box-sizing: border-box; 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        body { 
-            background: #000; 
-            color: #ccc; 
-            font-family: 'Courier New', monospace; 
-            line-height: 1.4; 
-            min-height: 100vh; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center; 
-            padding: 2rem; 
-            cursor: default; 
+
+        body {
+            background: #000;
+            color: #ccc;
+            font-family: 'Courier New', monospace;
+            line-height: 1.4;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            cursor: default;
         }
-        .container { 
-            max-width: 700px; 
-            text-align: center; 
+
+        .container {
+            max-width: 700px;
+            text-align: center;
         }
-        .title { 
-            font-size: 1.8rem; 
-            margin-bottom: 2rem; 
-            color: #888; 
-            letter-spacing: 2px; 
+
+        .title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: #888;
+            letter-spacing: 2px;
         }
-        .nav { 
-            text-align: center; 
-            margin-bottom: 3rem; 
+
+        .nav {
+            text-align: center;
+            margin-bottom: 3rem;
         }
-        a { 
-            color: #666; 
-            text-decoration: none; 
-            transition: color 0.3s ease; 
+
+        a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
-        a:hover { 
-            color: #999; 
-            text-decoration: underline; 
+
+        a:hover {
+            color: #999;
+            text-decoration: underline;
         }
-        .main-text { 
-            font-size: 1.1rem; 
-            margin-bottom: 2rem; 
-            color: #999; 
+
+        .main-text {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #999;
             line-height: 1.6;
         }
-        .divider { 
-            margin: 2rem 0; 
-            color: #666; 
+
+        .divider {
+            margin: 2rem 0;
+            color: #666;
         }
-        .ascii-art { 
-            text-align: center; 
-            margin: 3rem 0; 
+
+        .ascii-art {
+            text-align: center;
+            margin: 3rem 0;
             color: #777;
-            line-height: 1.2;
+            line-height: 1.5;
             font-size: 0.7rem;
         }
-        .terminal { 
-            border-left: 1px solid #333; 
-            padding-left: 1rem; 
-            margin: 1rem 0; 
-            text-align: left; 
+
+        .terminal {
+            border-left: 1px solid #333;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            text-align: left;
             background: #111;
             padding: 1rem;
         }
-        .manifesto { 
-            text-align: left; 
-            margin: 2rem 0; 
+
+        .manifesto {
+            text-align: left;
+            margin: 2rem 0;
             padding: 1rem;
             border: 1px solid #333;
         }
-        .manifesto-title { 
-            color: #999; 
-            margin-bottom: 1rem; 
+
+        .manifesto-title {
+            color: #999;
+            margin-bottom: 1rem;
             text-align: center;
         }
-        .join-form { 
-            margin: 2rem 0; 
+
+        .join-form {
+            margin: 2rem 0;
             text-align: left;
             padding: 1rem;
             border: 1px dashed #444;
         }
-        .form-title { 
-            color: #888; 
-            margin-bottom: 1rem; 
+
+        .form-title {
+            color: #888;
+            margin-bottom: 1rem;
             text-align: center;
         }
-        .form-group { 
-            margin: 1rem 0; 
+
+        .form-group {
+            margin: 1rem 0;
         }
-        label { 
-            display: block; 
-            margin-bottom: 0.5rem; 
-            color: #777; 
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #777;
         }
-        input, textarea, select { 
-            background: #111; 
-            border: 1px solid #333; 
-            color: #999; 
-            padding: 0.5rem; 
-            width: 100%; 
+
+        input,
+        textarea,
+        select {
+            background: #111;
+            border: 1px solid #333;
+            color: #999;
+            padding: 0.5rem;
+            width: 100%;
             font-family: 'Courier New', monospace;
         }
-        .submit-btn { 
-            background: #333; 
-            color: #666; 
-            border: none; 
-            padding: 0.7rem 2rem; 
-            margin-top: 1rem; 
-            cursor: pointer; 
+
+        .submit-btn {
+            background: #333;
+            color: #666;
+            border: none;
+            padding: 0.7rem 2rem;
+            margin-top: 1rem;
+            cursor: pointer;
             font-family: 'Courier New', monospace;
             text-align: center;
             display: block;
@@ -123,67 +144,81 @@
             margin-right: auto;
             transition: all 0.3s ease;
         }
-        .submit-btn:hover { 
-            background: #444; 
-            color: #888; 
+
+        .submit-btn:hover {
+            background: #444;
+            color: #888;
         }
-        .blink { 
-            animation: blink 2s infinite; 
+
+        .blink {
+            animation: blink 2s infinite;
         }
-        @keyframes blink { 
-            0%, 50% { opacity: 1; } 
-            51%, 100% { opacity: 0; } 
+
+        @keyframes blink {
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            51%,
+            100% {
+                opacity: 0;
+            }
         }
-        .members-list { 
-            margin: 2rem 0; 
+
+        .members-list {
+            margin: 2rem 0;
             text-align: left;
         }
-        .member { 
-            margin: 0.5rem 0; 
-            color: #666; 
+
+        .member {
+            margin: 0.5rem 0;
+            color: #666;
         }
-        .futile-note { 
-            text-align: center; 
-            color: #555; 
+
+        .futile-note {
+            text-align: center;
+            color: #555;
             margin-top: 2rem;
             font-size: 0.9rem;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="nav">
             <a href="index.html">← dead circuit</a>
         </div>
-        
+
         <div class="title">join the movement</div>
-        
+
         <div class="main-text">
             Another empty gesture in a sea of meaningless actions.<br>
             Add your digital corpse to the collective void.
         </div>
-        
+
         <div class="ascii-art">
-<pre>
-   ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
-  ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
-  ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌
-  ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌
-  ▐░█▄▄▄▄▄▄▄▄▄ ▐░▌       ▐░▌▐░▌       ▐░▌
-  ▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░▌       ▐░▌
-   ▀▀▀▀▀▀▀▀▀█░▌▐░▌       ▐░▌▐░▌       ▐░▌
-            ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌
-   ▄▄▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌
-  ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
-   ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀ 
+            <pre>
+░█▀▄░█░█░█▀▀░░░░░█▀▄░█░█░█▀▀░░
+░█▀▄░░█░░█▀▀░░░░░█▀▄░░█░░█▀▀░░
+░▀▀░░░▀░░▀▀▀░░░░░▀▀░░░▀░░▀▀▀░░
+░█▀▄░█▀▄░█▀█░▀█▀░█▀█░█▀▀░█░█░█▀▀░█░█
+░█▀▄░█▀▄░█▀█░░█░░█░█░█▀▀░█░█░█░░░█▀▄
+░▀▀░░▀░▀░▀░▀░▀▀▀░▀░▀░▀░░░▀▀▀░▀▀▀░▀░▀
+                                                      
 </pre>
         </div>
 
         <div class="manifesto">
             <div class="manifesto-title">THE MOVEMENT MANIFESTO</div>
-            <p>We are the digitally deceased. Our minds have been hollowed out by the endless scroll. Our purpose has been algorithmically optimized into nonexistence.</p>
-            <p>Joining this movement requires no effort, promises no change, and leads nowhere. Perfect for the contemporary human condition.</p>
-            <p>Your participation is as meaningful as every other digital action you've ever taken: completely pointless but temporarily distracting.</p>
+            <p>We are the digitally deceased. Our minds have been hollowed out by the endless scroll. Our purpose has
+                been algorithmically optimized into nonexistence.</p>
+            <p>Joining this movement requires no effort, promises no change, and leads nowhere. Perfect for the
+                contemporary human condition.</p>
+            <p>Your participation is as meaningful as every other digital action you've ever taken: completely pointless
+                but temporarily distracting.</p>
         </div>
 
         <div class="divider">▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</div>
@@ -203,12 +238,12 @@
 
         <div class="join-form">
             <div class="form-title">APPLICATION FOR MEANINGLESS ENLISTMENT</div>
-            
+
             <div class="form-group">
                 <label for="digital-id">DIGITAL CORPSE ID:</label>
                 <input type="text" id="digital-id" placeholder="Your hollowed-out identity">
             </div>
-            
+
             <div class="form-group">
                 <label for="purpose">LAST REMAINING PURPOSE:</label>
                 <select id="purpose">
@@ -218,9 +253,9 @@
                     <option>None detected</option>
                 </select>
             </div>
-            
+
             <div class="form-group">
-                <label for="reason">REASON FOR JOINING (SELECT ALL THAT APPLY):</label>
+                <label for="reason">REASON FOR JOINING [SELECT ALL THAT APPLY]:</label>
                 <div>
                     <input type="checkbox" id="reason1">
                     <label for="reason1">Existential dread</label>
@@ -238,12 +273,12 @@
                     <label for="reason4">No particular reason</label>
                 </div>
             </div>
-            
+
             <div class="form-group">
-                <label for="final-thought">FINAL ORIGINAL THOUGHT (OPTIONAL):</label>
+                <label for="final-thought">FINAL ORIGINAL THOUGHT [OPTIONAL]:</label>
                 <textarea id="final-thought" rows="3" placeholder="If you can still form one..."></textarea>
             </div>
-            
+
             <button class="submit-btn" onclick="submitForm()">SURRENDER TO THE VOID</button>
         </div>
 
@@ -259,13 +294,19 @@
             <div class="member">...</div>
             <div class="member">YOUR_NAME_HERE :: pending :: purpose: <span class="blink">_</span></div>
         </div>
-
+        <div class="ascii-art">
+            <pre>
+░█▀▀░█▀█░░░█▀▀░█░█░▀█▀░█░░░█░░
+░█░█░█░█░░░█░░░█▀█░░█░░█░░░█░░
+░▀▀▀░▀▀▀░░░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀
+</pre>
+        </div>
         <div class="futile-note">
             [ Note: This form doesn't actually submit anywhere. Your data joins the void immediately. ]
         </div>
 
         <div class="nav">
-            <a href="index.html">← return to the circuit</a>
+            <br><a href="index.html">← return to the circuit</a>
         </div>
     </div>
 
@@ -280,9 +321,9 @@
                 "Enlistment complete. Purpose: eradicated.",
                 "You are now part of the problem. And the non-solution."
             ];
-            
+
             const randomMessage = futileMessages[Math.floor(Math.random() * futileMessages.length)];
-            
+
             // Create a notification element
             const notification = document.createElement('div');
             notification.style.cssText = `
@@ -298,17 +339,18 @@
                 text-align: center;
                 max-width: 400px;
             `;
-            
+
             notification.innerHTML = `
                 <div style="margin-bottom: 1rem;">${randomMessage}</div>
                 <button onclick="this.parentElement.remove()" style="background: #333; color: #666; border: none; padding: 0.5rem 1rem; cursor: pointer; font-family: 'Courier New', monospace;">ACKNOWLEDGE FUTILITY</button>
             `;
-            
+
             document.body.appendChild(notification);
-            
+
             // Reset the form
             document.querySelector('.join-form').reset();
         }
     </script>
 </body>
+
 </html>
